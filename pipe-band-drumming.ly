@@ -40,10 +40,12 @@
       % Dont show a clef
       \omit Clef
       
-      
+  
+      \dynamicUp    
     }
   }
-
+  
+  
 %%% SUPPORT FUNCTIONS %%%
 
 %% (if (equal? 'right (ly:music-property inHand 'drum-type))
