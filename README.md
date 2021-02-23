@@ -3,6 +3,8 @@
 
 These are support files for writing pipe band drum scores with lilypond.
 
+[![Cameronian Rant](cameronian.png)](cameronian.ly)
+
 ## Requirements
 
  * Install [Lilypond](https://lilypond.org)
