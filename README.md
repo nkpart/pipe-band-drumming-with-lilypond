@@ -18,7 +18,7 @@ These are support files for writing pipe band drum scores with lilypond.
 
 ## The Templates
 
-* [2/4 March](template-24-march.ly)
+* [2/4 March](/nkpart/pipe-band-drumming-with-lilypond/raw/master/template-24-march.ly)
 * [3/4 March](template-34-march.ly)
 * [4/4 March](template-44-march.ly)
 * [6/8 March](template-68-march.ly)
