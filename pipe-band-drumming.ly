@@ -10,13 +10,40 @@
   % Defines a style table that puts left under the line, and right above it
   #(define pipe-band-snare '((left default #f -1) (right default #f 1)))
 
-
 %%%% Welcome to Pipe Band Drumming with Lilypond
 
 % This file assumes that drum notes are being created with 'left and 'right
-% types.
+% types as per the drum style setup above.
 
-%%% SUPPORT %%%
+%%% FIX THE LAYOUT %%%
+
+  \layout {
+    % No indent on the first line
+    indent = #0
+    \context {
+      \Score
+      % Fixes grace note spacing in drags and roughs
+      \consists "Grace_spacing_engraver"
+      \override GraceSpacing.shortest-duration-space = 0.1
+      \override GraceSpacing.spacing-increment = 0.1
+      % All stems down
+      \override Stem.direction = #down
+      % Flatten beams
+      \override Beam #'positions = #'(-4 . -4)
+      
+      % 1 Line in the staff
+      \override StaffSymbol.line-count =  #1      
+      drumStyleTable = #(alist->hash-table pipe-band-snare)
+
+      % Remove this line to enable bar numbers
+      \omit BarNumber
+      % Dont show a clef
+      \omit Clef
+    }
+  }
+
+
+%%% SUPPORT FUNCTIONS %%%
 
 %% (if (equal? 'right (ly:music-property inHand 'drum-type))
   #(define (hands inHand)
