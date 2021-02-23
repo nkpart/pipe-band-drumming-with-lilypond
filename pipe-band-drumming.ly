@@ -39,9 +39,10 @@
       \omit BarNumber
       % Dont show a clef
       \omit Clef
+      
+      
     }
   }
-
 
 %%% SUPPORT FUNCTIONS %%%
 
