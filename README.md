@@ -18,16 +18,15 @@ These are support files for writing pipe band drum scores with lilypond.
 
 ## The Templates
 
-* [2/4 March](https://github.com/nkpart/pipe-band-drumming-with-lilypond/raw/master/template-24-march.ly)
-* <a href="https://github.com/nkpart/pipe-band-drumming-with-lilypond/raw/master/template-24-march.ly" download>2/4 March</a>
-* [3/4 March](https://github.com/nkpart/pipe-band-drumming-with-lilypond/raw/master/template-34-march.ly)
-* [4/4 March](https://github.com/nkpart/pipe-band-drumming-with-lilypond/raw/master/template-44-march.ly)
-* [6/8 March](https://github.com/nkpart/pipe-band-drumming-with-lilypond/raw/master/template-68-march.ly)
-* [6/8 Jig](https://github.com/nkpart/pipe-band-drumming-with-lilypond/raw/master/template-68-jig.ly)
-* [9/8 Jig](https://github.com/nkpart/pipe-band-drumming-with-lilypond/raw/master/template-98-jig.ly)
-* [9/8 March](https://github.com/nkpart/pipe-band-drumming-with-lilypond/raw/master/template-98-march.ly)
-* [Strathspey](https://github.com/nkpart/pipe-band-drumming-with-lilypond/raw/master/template-strathspey.ly)
-* [Reel (Traditional)](https://github.com/nkpart/pipe-band-drumming-with-lilypond/raw/master/template-reel-traditional.ly)
+* [2/4 March](template-24-march.ly)
+* [3/4 March](template-34-march.ly)
+* [4/4 March](template-44-march.ly)
+* [6/8 March](template-68-march.ly)
+* [6/8 Jig](template-68-jig.ly)
+* [9/8 Jig](template-98-jig.ly)
+* [9/8 March](template-98-march.ly)
+* [Strathspey](template-strathspey.ly)
+* [Reel (Traditional)](template-reel-traditional.ly)
 
 ## Examples
 
