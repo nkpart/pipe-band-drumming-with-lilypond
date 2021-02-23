@@ -31,10 +31,13 @@ notes = \drummode {
       \flam P16. p32 P16. p32-> P32 p P p P16.-> p32 |
       
       % Bar 6
-      P16. p32-> P32 p P p P16.[ \drag P32 P p P p] |
+      P16. p32-> P32 p P p P8-> P8:32( |
       
-      % Bar 7 and 8
-      P4 P4:32( | P4) r4 | \break
+      % Bar 7
+      p8) \flam P16. p32 P16. \flam p32 P16. p32 |
+      
+      % Bar 8
+      \flam P8 P8:32( p8) r8 | 
   }
   
   \repeat volta 2 {
@@ -57,10 +60,13 @@ notes = \drummode {
       P4:32( P8) p | 
       
       % Bar 6
-      P4:32( P16.) [ \drag P32 P p P p] |
+      P4:32( P8) P8:32( |
       
-      % Bar 7 and 8
-      P4 P4:32( |  P4) r4 | \break
+      % Bar 7
+      p8) \flam P16. p32 P16. \flam p32 P16. p32 |
+      
+      % Bar 8
+      \flam P8 P8:32( p8) r8 | 
   }
 
 }
