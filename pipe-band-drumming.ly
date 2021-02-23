@@ -22,6 +22,10 @@
     indent = #0
     \context {
       \Score
+      
+          $(add-grace-property 'Voice 'Stem 'font-size -4) 
+    $(add-grace-property 'Voice 'NoteHead 'font-size -4) 
+
       % Fixes grace note spacing in drags and roughs
       \consists "Grace_spacing_engraver"
       \override GraceSpacing.shortest-duration-space = 0.1
@@ -90,6 +94,26 @@
       \once \override Stem #'direction = #up
       \once \override Beam #'positions = #'(2 . 2.25)
       $gracey $gracey
+  }
+  $baseNote
+  #}
+  ))
+  
+  ruff =
+  #(define-music-function (parser location baseNote) (ly:music?)
+  (let* ((h (hands baseNote))
+        (offHand (cdr h))
+        (onHand (car h))
+        (gracey1 (make-music 'NoteEvent 'drum-type onHand 'duration (ly:make-duration 4)) )
+        (gracey2 (make-music 'NoteEvent 'drum-type offHand 'duration (ly:make-duration 4)) )
+        )
+  #{
+  \slashedGrace {
+      \once \override Stem #'direction = #up
+      \once \override Beam #'positions = #'(2 . 2.25)
+      \once \override Beam #'positions = #'(2 . 3)
+
+      $gracey1 $gracey2 $gracey2
   }
   $baseNote
   #}
